@@ -10,7 +10,7 @@ function formatModelName(key) {
   return names[key] || key;
 }
 
-// 1. Fetch and render preview of training data
+// Fetch and render preview of training data
 async function peekData() {
   const previewDiv = document.getElementById("dataPreview");
   previewDiv.classList.remove("hidden");
@@ -49,7 +49,7 @@ async function peekData() {
   }
 }
 
-// 2. Upload test CSV and render metrics table
+// Upload test CSV and render metrics table
 async function runPrediction() {
   const fileInput = document.getElementById("csvFile");
   const outputContainer = document.getElementById("outputContainer");
