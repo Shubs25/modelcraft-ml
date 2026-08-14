@@ -30,13 +30,13 @@ SCALED_MODELS = {"Logistic Regression", "K-Nearest Neighbors", "Naive Bayes"}
 @st.cache_resource
 def load_artifacts():
     """Load pre-fitted scaler and saved model binaries from disk."""
-    scaler = joblib.load(os.path.join("model/trained_model", "scaler.joblib"))
+    scaler = joblib.load(os.path.join("model", "scaler.joblib"))
     models = {
-        "Logistic Regression": joblib.load(os.path.join("model/trained_model", "logistic_regression.joblib")),
-        "Decision Tree": joblib.load(os.path.join("model/trained_model", "decision_tree.joblib")),
-        "K-Nearest Neighbors": joblib.load(os.path.join("model/trained_model", "knn.joblib")),
-        "Naive Bayes": joblib.load(os.path.join("model/trained_model", "naive_bayes.joblib")),
-        "Random Forest": joblib.load(os.path.join("model/trained_model", "random_forest.joblib")),
+        "Logistic Regression": joblib.load(os.path.join("model", "logistic_regression.joblib")),
+        "Decision Tree": joblib.load(os.path.join("model", "decision_tree.joblib")),
+        "K-Nearest Neighbors": joblib.load(os.path.join("model", "knn.joblib")),
+        "Naive Bayes": joblib.load(os.path.join("model", "naive_bayes.joblib")),
+        "Random Forest": joblib.load(os.path.join("model", "random_forest.joblib")),
     }
     return scaler, models
 
