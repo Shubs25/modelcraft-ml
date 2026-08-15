@@ -171,7 +171,7 @@ with st.expander("Expand me!", expanded=False):
         age = c5.number_input("Age (AGE)", min_value=18, max_value=100, value=30, step=1)
 
     with tab_pay_stat:
-        st.caption("Repayment status: -1 = Pay duly, 0 = Revolving credit, 1-8 = Payment delay (in months)")
+        st.caption("Repayment status: -2 = No Consumption, -1 = Pay duly, 0 = Revolving credit, 1-8 = Payment delay (in months)")
         c1, c2, c3 = st.columns(3)
         pay_0 = c1.number_input("Last Month (PAY_0)", min_value=-2, max_value=8, value=0)
         pay_2 = c2.number_input("2 Months Ago (PAY_2)", min_value=-2, max_value=8, value=0)
