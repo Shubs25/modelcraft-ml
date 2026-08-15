@@ -1,15 +1,16 @@
 # ModelCraft-ML: Credit Card Default Risk
 
 ---
-## 0. Metadata
+## Metadata
 | Author        | BITS ID     | Subject                           |
 |---------------|-------------|-----------------------------------|
 | Shubham Ghosh | 2025AD05055 | S2-25_AIMLCZG565 Machine Learning |
 
-Live Link: https://bits-modelcraft-ml.streamlit.app/
+### Live Link: https://bits-modelcraft-ml.streamlit.app
+
 ---
 
-## 1. Problem Statement
+## A. Problem Statement
 
 * **Objective:** Predict whether a credit card client will default on their upcoming monthly payment (`default.payment.next.month` = `1` vs `0`) using their demographic profile, credit limit, and six months of historical billing, repayment status, and payment activity.
 * **Business Impact:** Credit card defaults lead to significant financial losses for issuing institutions. Identifying high-risk borrowers early allows risk management teams to take preventative actions, such as adjusting credit limits, initiating structured payment plans, or conducting manual account reviews.
@@ -19,7 +20,7 @@ Live Link: https://bits-modelcraft-ml.streamlit.app/
 
 ---
 
-## 2. Dataset Description
+## B. Dataset Description
 
 * **Dataset:** Default of Credit Card Clients Dataset
 * **Source:** UCI Machine Learning Repository (Dataset ID: `350`)
@@ -37,8 +38,12 @@ Live Link: https://bits-modelcraft-ml.streamlit.app/
 | **Previous Payments** | `PAY_AMT1` to `PAY_AMT6`                             | Historical payment amount (NT dollar) made during each preceding month from April to September.                                                                                                          |
 
 ---
+## C. GitHub Repository Link
+### https://github.com/Shubs25/modelcraft-ml
 
-## 3. Models Used
+---
+
+## D. Models Used
 
 Five classical supervised classification algorithms representing distinct mathematical paradigms are benchmarked under identical train/test splits:
 
@@ -67,7 +72,7 @@ Five classical supervised classification algorithms representing distinct mathem
 * **Description:** Constructs an ensemble of 100 de-correlated decision trees using random feature subsets and outputs the majority class prediction across all trees to minimize model variance.
 * **Data Preprocessing:** Accepts raw numerical features directly.
 
-## 3.1 Evaluation Metrics Across Models
+## Evaluation Metrics Across Models
 
 | Model               | Accuracy | AUC    | Precision | Recall | F1     | MCC    |
 |---------------------|----------|--------|-----------|--------|--------|--------|
@@ -77,7 +82,7 @@ Five classical supervised classification algorithms representing distinct mathem
 | Naive Bayes         | 0.7525   | 0.7249 | 0.4515    | 0.5539 | 0.4975 | 0.3386 |
 | Random Forest       | 0.8120   | 0.7506 | 0.6325    | 0.3580 | 0.4572 | 0.3749 |
 
-## 4. Model Performance Observations
+## Model Performance Observations
 
 | ML Model Name        | Observaton about Model Performance                                                                                                                                                                                                                      |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
