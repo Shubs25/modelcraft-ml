@@ -85,6 +85,6 @@ Five classical supervised classification algorithms representing distinct mathem
 | Logistic Regression  | Achieves high Accuracy (80.77%) and Precision (68.68%) but has low Recall (23.96%), meaning it identifies relatively few actual defaults. Without class re-weighting, the model tends to favor the majority class.                                      |
 | K-Nearest Neighbors  | Balanced results, with balanced Precision (54.87%) and a reasonable AUC (0.7015), while achieving moderate Recall (35.64%).                                                                                                                             |
 | Decision Tree        | Weakest overall performer, with the lowest AUC (0.6075) and MCC (0.2042). The unpruned single tree is more vulnerable to high variance, limiting its generalization and classification performance.                                                     |
-| ***Overall Winner*** | ***Random Forest (Highest ROC-AUC, MCC, Accuracy & a solid Precision.***                                                                                                                                                                                |
+| ***Overall Winner*** | ***Random Forest (Highest ROC-AUC, MCC, Accuracy & a solid Precision)***                                                                                                                                                                                |
 
 ---
