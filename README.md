@@ -6,6 +6,7 @@
 |---------------|-------------|-----------------------------------|
 | Shubham Ghosh | 2025AD05055 | S2-25_AIMLCZG565 Machine Learning |
 
+Live Link: https://bits-modelcraft-ml.streamlit.app/
 ---
 
 ## 1. Problem Statement
